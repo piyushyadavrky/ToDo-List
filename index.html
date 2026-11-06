@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./cssjavaprac/jsarrayprac.css">
+</head>
+<body>
+  <p class="title">Todo List</p>
+  <p class="duedateoption">Deadline Compulsion</p>
+  <button class="duedateoptionButton" onclick="duedatefunction()">Off</button>
+  <main>
+
+    <div class="input">
+      <input placeholder="Todo name" class="inputtodoo" type="text" onkeydown="
+      if(event.key === 'Enter'){
+        callFunction()
+      }
+      ">
+      <input placeholder="todo list" class="input-date" type="date" onkeydown="
+      if(event.key === 'Enter'){
+        callFunction()
+      }
+      "
+      >
+      <button class="add" onclick="callFunction()" >Add</button>
+    </div>
+    <div class="todoListShow"></div>
+
+
+
+
+
+
+  </main>
+  <script src="./jsarrayprac.js"></script>
+</body>
+</html>

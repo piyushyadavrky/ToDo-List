@@ -1,0 +1,126 @@
+body {
+  font-family: Roboto, arial;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.taskcount{
+  font-size: 14px;
+  color: rgb(39, 2, 103);
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 470px;
+  align-items: center;
+}
+
+.inputtodoo {
+  width: 192px;
+  height: 34px;
+  font-family: Roboto, arial;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 6px;
+  vertical-align: middle;
+}
+
+.inputtodoo::placeholder {
+  font-family: Roboto, arial;
+  font-weight: 400;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.input-date {
+  width: 156px;
+  height: 36px;
+}
+
+.add {
+  width: 94px;
+  height: 39px;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.todoTask {
+  display: inline-block;
+  width: 192px;
+  font-family: Roboto, arial;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 2px;
+  vertical-align: middle;
+  
+}
+
+.deleteTaskButton {
+  width: 94px;
+  height: 39px;
+  color: white;
+  background-color: rgb(152, 5, 5);
+  border: none;
+  cursor: pointer;
+}
+
+.todoTaskparent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 470px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.todoDate{
+  display: inline-block;
+  width: 156px;
+  padding-left: 10px;
+}
+
+.duedateoption {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.inputTodonull {
+  border: 2px solid rgb(190, 4, 4);
+}
+
+.inputDatenull {
+  border: 2px solid rgb(190, 4, 4); 
+}
+
+.duedateoptionButton {
+  cursor: pointer;
+
+}
+
+.is-active {
+  color: white;
+  background-color: rgb(248, 138, 224);
+  border: none;
+  border-radius: 4px;
+}
+
+.is-inactive {
+  color: white;
+  background-color: rgb(73, 194, 247);
+  border: none;
+  border-radius: 4px;
+}
+
+.inputtodoo:focus,
+.input-date:focus {
+  outline: none;
+  border: 1px solid rgb(0, 72, 255);
+}
